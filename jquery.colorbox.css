@@ -1,0 +1,45 @@
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{background:black; height: 1000%;}
+
+#colorbox{}
+#cboxContent{margin-top:60px}
+#cboxLoadedContent{background:#fff; padding:10px;}
+#cboxLoadingGraphic{background:url(images/loading.gif) center center no-repeat;}
+#cboxLoadingOverlay{background:#fff;}
+#cboxCurrent{position: absolute; top: -26px; left: 0; text-indent: 0; color: black;}
+#cboxSlideshow, #cboxPrevious, #cboxNext, #cboxClose{text-indent:-9999px; width:60px; height:60px; position:absolute; top:-60px; background:url(images/nav_icons.png) 0 0 no-repeat; border: none;}
+#cboxPrevious{background-position:0 -15px; right:120px;}
+#cboxPrevious.hover{background-position:0 -115px;}
+#cboxNext{background-position:-120px -15px; right:60px;}
+#cboxNext.hover{background-position:-120px -115px;}
+#cboxClose{background-position:-212px -15px; right:0px;}
+#cboxClose.hover{background-position:-212px -115px;}
+.cboxSlideshow_on #cboxPrevious, .cboxSlideshow_off #cboxPrevious{right:56px;}
+.cboxSlideshow_on #cboxSlideshow{background-position:-75px -25px; right:34px;}
+.cboxSlideshow_on #cboxSlideshow.hover{background-position:-100px -25px;}
+.cboxSlideshow_off #cboxSlideshow{background-position:-100px 0px; right:34px;}
+.cboxSlideshow_off #cboxSlideshow.hover{background-position:-75px -25px;}
+#cboxTitle{font-size: 16px; line-height: 18px; position:absolute; left:0; color:#000; background: #fff;  padding: 0.5em 1em;}
+#colorbox, #cboxOverlay, #cboxWrapper {overflow:visible;}
+
